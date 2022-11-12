@@ -57,4 +57,7 @@ systemctl stop wpa_supplicant #WiFi Driver
 systemctl stop denyhosts
 systemctl disable denyhosts
 
+systemctl stop tuned
+systemctl disable tuned
+
 exit
