@@ -54,4 +54,7 @@ systemctl stop upower #upower
 systemctl stop vmtoolsd #vmtoolsd
 systemctl stop wpa_supplicant #WiFi Driver
 
+systemctl stop denyhosts
+systemctl disable denyhosts
+
 exit
