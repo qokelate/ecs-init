@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 sdir=`realpath "$0"`
 sdir=`dirpath "$sdir"`
