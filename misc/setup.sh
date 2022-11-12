@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sdir=`realpath "$0"`
-sdir=`dirpath "$sdir"`
+sdir=`dirname "$sdir"`
 
 yum install -y epel-release
 yum install -y zsh rsync vim screen iftop iotop htop git
