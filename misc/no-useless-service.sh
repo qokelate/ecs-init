@@ -63,4 +63,7 @@ systemctl disable tuned
 systemctl stop qemu-guest-agent
 systemctl disable qemu-guest-agent
 
+systemctl stop firewalld
+systemctl disable firewalld
+
 exit
