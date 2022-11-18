@@ -66,4 +66,12 @@ systemctl disable qemu-guest-agent
 systemctl stop firewalld
 systemctl disable firewalld
 
+
+systemctl stop packagekit
+systemctl disable packagekit
+systemctl mask packagekit
+systemctl stop packagekit-offline-update
+systemctl disable packagekit-offline-update
+systemctl mask packgekit-offline-update
+
 exit
