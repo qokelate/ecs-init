@@ -4,7 +4,7 @@ sdir=`realpath "$0"`
 sdir=`dirname "$sdir"`
 
 yum install -y epel-release
-yum install -y zsh rsync vim screen iftop iotop htop git
+yum install -y zsh rsync vim screen iftop iotop htop git unzip
 
 mkdir /data1
 cd /data1
