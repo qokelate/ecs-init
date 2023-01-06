@@ -12,6 +12,7 @@ git clone 'https://e.coding.net/sma11case/demo1/zsh-demo.git'
 ln -sf /data1/zsh-demo/.oh-my-zsh "$HOME/"
 ln -sf /data1/zsh-demo/.zshrc "$HOME/"
 
+cd "$sdir"
 ln -sf "$sdir/config/.screenrc" "$HOME/"
 ln -sf "$sdir/config/config/.vimrc" "$HOME/"
 
