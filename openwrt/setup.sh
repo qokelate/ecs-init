@@ -8,4 +8,6 @@ opkg install unzip procps-ng-kill procps-ng-pkill procps-ng-ps
 opkg install ca-certificates ca-bundle
 opkg install curl iftop socat haproxy
 
+ln -sf /usr/bin/zsh /bin/
+
 exit
