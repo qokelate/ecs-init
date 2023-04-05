@@ -21,7 +21,7 @@ haproxy_build(){
     tar -zxvf 'haproxy-2.4-dev9.tar.gz'
     cd 'haproxy-2.4-dev9'
 
-    make TARGET=linux-musl \
+    make TARGET=linux-musl PREFIX=/mnt/dists/haproxy \
     USE_ZLIB=1 ZLIB_LIB=/data1/dists/zlib/lib ZLIB_INC=/data1/dists/zlib/include \
     USE_PCRE=1 PCRE_LIB=/mnt/dists/pcre/lib PCRE_INC=/mnt/dists/pcre/include \
     USE_OPENSSL=1 SSL_LIB=/mnt/dists/openssl-v1.1.1k/lib SSL_INC=/mnt/dists/openssl-v1.1.1k/include
