@@ -13,7 +13,7 @@ zlib_build(){
 	wget -c https://zlib.net/zlib-1.2.13.tar.gz
 	tar -xzvf zlib-1.2.13.tar.gz
 	cd zlib-1.2.13
-	./configure --prefix=/mnt/dists/zlib
+	./configure --static --prefix=/mnt/dists/zlib
 	make -j$(nproc) && make install
 }
 
@@ -22,7 +22,7 @@ openssl_build(){
 	wget -c https://github.com/openssl/openssl/archive/OpenSSL_1_1_1k.tar.gz
 	tar -xzvf OpenSSL_1_1_1k.tar.gz
 	cd openssl-OpenSSL_1_1_1k
-	./Configure --prefix=/mnt/dists/openssl-v1.1.1k linux64-s390x zlib threads \
+	./Configure --prefix=/mnt/dists/openssl-v1.1.1k linux64-s390x zlib threads no-shared \
 	--with-zlib-lib=/mnt/dists/zlib/lib --with-zlib-include=/mnt/dists/zlib/include
 	make -j$(nproc) && make install_sw
 }
