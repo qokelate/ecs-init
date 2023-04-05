@@ -18,5 +18,6 @@ docker run --restart=unless-stopped --name=gcc7-alpine -d \
     -p '20002:22' \
     -v '/data1:/data1' \
     -v '/data1:/mnt' \
+    -e 'SSH_PUB_KEY=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBD+Y1DwXMQQDU0BtbCLv5MGWdH92j6m7HWJxxj0AALL demo1' \
     'alpine:latest' '/data1/ecs-init/gcc7-openssh-alpine/run.sh'
 
