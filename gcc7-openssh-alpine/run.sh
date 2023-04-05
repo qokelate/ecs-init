@@ -21,3 +21,5 @@ docker run --restart=unless-stopped --name=gcc7-alpine -d \
     -e 'SSH_PUB_KEY=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBD+Y1DwXMQQDU0BtbCLv5MGWdH92j6m7HWJxxj0AALL demo1' \
     'alpine:latest' '/data1/ecs-init/gcc7-openssh-alpine/run.sh'
 
+ln -sf "/data1/zsh-demo/.zshrc" "$HOME/"
+ln -sf "/data1/zsh-demo/.oh-my-zsh" "$HOME/"

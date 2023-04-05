@@ -2,6 +2,10 @@
 
 set -ex
 
+rm -rf stunnel
+mkdir stunnel
+cd stunnel
+
 BASE=`pwd`
 
 zlib_build(){
