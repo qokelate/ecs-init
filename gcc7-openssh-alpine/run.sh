@@ -18,5 +18,5 @@ docker run --restart=unless-stopped --name=gcc7-alpine -d \
     -p '20002:22' \
     -v '/data1:/data1' \
     -v '/data1:/mnt' \
-    'alpine:latest' '/data1/gcc7-alpine/run.sh'
+    'alpine:latest' '/data1/ecs-init/gcc7-openssh-alpine/run.sh'
 
