@@ -2,6 +2,8 @@
 
 dnf -y install dnf-plugins-core
 
+yum install -y yum-utils
+
 yum-config-manager \
     --add-repo \
     'https://download.docker.com/linux/rhel/docker-ce.repo'
