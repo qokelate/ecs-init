@@ -12,7 +12,7 @@ systemctl restart sshd
 mkdir /data1
 cd /data1
 
-dnf install -y git
+yum install -y git
 git clone 'https://e.coding.net/smallcase/demo1/ecs-init.git'
 
 /data1/ecs-init/misc/rhel9.sh
