@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt install -y language-pack-zh-hans
-apt install -y zsh rsync vim screen iftop iotop htop git unzip bind-utils net-tools zip
+apt install -y zsh rsync vim screen iftop iotop htop git unzip net-tools zip
 
 mkdir -pv /data1; cd /data1
 git clone 'https://e.coding.net/smallcase/demo1/zsh-demo.git'
