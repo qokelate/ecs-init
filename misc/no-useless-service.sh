@@ -69,6 +69,7 @@ systemctl disable qemu-guest-agent
 systemctl stop firewalld
 systemctl disable firewalld
 
+systemctl disable --now unattended-upgrades
 
 systemctl stop packagekit
 systemctl disable packagekit
