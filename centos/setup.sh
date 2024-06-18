@@ -3,15 +3,9 @@
 sdir=`dirname "$0"`
 sdir=`realpath "$sdir/.."`
 
-yum -h && (
 yum install -y epel-release
 yum install -y zsh rsync vim screen iftop iotop htop git unzip net-tools zip
 yum install -y bind-utils
-)
-
-apt -h && (
-apt install -y zsh rsync vim screen iftop iotop htop git unzip net-tools zip
-)
 
 
 [ -d '/data1' ] || mkdir -pv /data1
