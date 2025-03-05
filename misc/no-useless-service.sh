@@ -73,5 +73,24 @@ systemctl stop vmtoolsd #vmtoolsd
 systemctl stop wpa_supplicant #WiFi Driver
 
 
+systemctl stop pmpause
+systemctl stop pmlogger
+systemctl stop pmdaroot
+systemctl stop pmie
+systemctl stop pmdakvm
+systemctl stop pmproxy
+systemctl stop pmcd
+systemctl stop pmdaxfs
+
+systemctl mask pmpause
+systemctl mask pmlogger
+systemctl mask pmdaroot
+systemctl mask pmie
+systemctl mask pmdakvm
+systemctl mask pmproxy
+systemctl mask pmcd
+systemctl mask pmdaxfs
+
+
 exit
 

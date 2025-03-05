@@ -1,5 +1,6 @@
 #!/bin/bash
 
+apt update
 apt install -y language-pack-zh-hans
 apt install -y zsh rsync vim screen iftop iotop htop git unzip net-tools zip
 

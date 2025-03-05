@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "\n\n" >> /etc/fstab
+echo "tmpfs /usr/local/aegis tmpfs defaults,nofail,nodev,nosuid,size=1M 0 0" >> /etc/fstab
+echo "[INFO] ok, reboot to take effect"
+
+exit
+
 service aegis status
 service aegis stop
 
