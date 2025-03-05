@@ -92,5 +92,10 @@ systemctl mask pmcd
 systemctl mask pmdaxfs
 
 
+dpkg-reconfigure unattended-upgrades
+systemctl stop unattended-upgrades
+systemctl disable unattended-upgrades
+
+
 exit
 
