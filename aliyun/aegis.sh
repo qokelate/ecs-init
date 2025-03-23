@@ -1,7 +1,13 @@
 #!/bin/bash
 
-echo "\n\n" >> /etc/fstab
-echo "tmpfs /usr/local/aegis tmpfs defaults,nofail,nodev,nosuid,size=1M 0 0" >> /etc/fstab
+cat <<EOF >>/etc/fstab
+
+tmpfs /usr/local/aegis tmpfs defaults,nofail,nodev,nosuid,size=4K 0 0
+tmpfs /usr/local/cloudmonitor tmpfs defaults,nofail,nodev,nosuid,size=4K 0 0
+tmpfs /usr/local/share/assist-daemon tmpfs defaults,nofail,nodev,nosuid,size=4K 0 0
+tmpfs /usr/local/share/aliyun-assist tmpfs defaults,nofail,nodev,nosuid,size=4K 0 0
+EOF
+
 echo "[INFO] ok, reboot to take effect"
 
 exit
