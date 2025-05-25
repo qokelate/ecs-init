@@ -10,6 +10,7 @@ ln -sf /data1/zsh-demo/.oh-my-zsh "$HOME/"
 ln -sf /data1/zsh-demo/.zshrc "$HOME/"
 
 sdir=`dirname "$0"`
+sdir=`realpath "$sdir/.."`
 ln -sf "$sdir/config/.screenrc" "$HOME/"
 ln -sf "$sdir/config/.vimrc" "$HOME/"
 
